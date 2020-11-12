@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -66,16 +68,17 @@ nav a {
 
 .landing-page h1 {
     width: 50%;
-    font-size: 42px;
+    font-size: 45px;
     font-weight: 700;  
     margin-bottom: 3%;
 }
 
 .landing-page-content-links a {
     background-color: #f8db14;
-    padding: 20px 30px;
-    font-weight: 800;
+    padding: 15px 20px;
+    font-weight: 700;
     color: black;
+    font-size: 12px;
 }
 
 .landing-page-content-links a:last-of-type {
@@ -84,7 +87,58 @@ nav a {
 }
 
 .landing-page span {
-    align-self: center;
+    position: absolute;
+    bottom: 115px;
+    right: 50%;
+}
+
+span ~ .arrow {
+    position: absolute;
+    right: 50%;
+    bottom: 80px;
+}
+
+.arrow-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.l-side {
+    position: absolute;
+    top: 50%;
+    left: 40px
+}
+
+.r-side {
+    position: absolute;
+    top: 50%;
+    right: 40px;
 }
 
 .services-container {
@@ -125,9 +179,11 @@ nav a {
 }
 
 .box-shadow p {
-    max-width: 43%;
-    padding: 20px 30px;
+    max-width: 50%;
+    min-width: min-content;
+    padding: 7px 10px;
     border: 2px solid #f8db14;
+    font-size: 21px;
     font-weight: 700;
     color:  #f8db14;
     text-align: center;
@@ -175,39 +231,45 @@ nav a {
 
 .recomendation-box h2 {
     margin-bottom: 2%;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 800;
     text-transform: uppercase;
     color: #595959;
 }
 
 .recomendation-box p {
-    font-size: 14px;
+    font-size: 11px;
     line-height: 170%;
     color: #c6c6c6;
 }
 
 .realization {
+    background-color: white;
+}
+
+.realization .container {
     display: flex;
     margin: 4% auto;
 }
 
 .realization-header {
-    width: 70%;
+    width: 65%;
     display: flex;
     flex-direction: column;
 }
 
 .realization-header h1 {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 10%;
+    letter-spacing: -1px;
 }
 
 .realization-header p {
     color: #636363;
     margin-bottom: 10%;
+    font-size: 11px;
     line-height: 150%;
 }
 
@@ -229,23 +291,27 @@ nav a {
 
 
 .realization-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     column-gap: 2%;
+}
+
+.realization-content-box {
+    flex-shrink: 1;
 }
 
 .realization-content-pic {
     width: 100%;
-    padding-bottom: 70%;
-    background-position: center;
+    padding-bottom: 80%;
 }
 
 .pic-1 {
     background-image: url(realization-1.png); 
+    background-position: center;
 }
 
 .pic-2 {
     background-image: url(realization-2.png); 
+    background-position: left;
 }
 
 .pic-3 {
@@ -255,54 +321,165 @@ nav a {
 
 .realization-content-desc {
     background-color: #e9e9e9;
-    padding: 30px 20px;
+    padding: 25px 25px;
 }
 
 .realization-content h2 {
-    font-size: 24px;
+    margin-bottom: 30px;
+    font-size: 15px;
     font-weight: 700;
+    letter-spacing: -1px;
 }
 
 .realization-content p {
     color: #8c8c8c;
+    font-size: 11px;
+
 }
 
+footer {
+    position: relative;
+}
 
+.break{ 
+    background-color: #f8db14;
+    position: relative;
+    z-index: 1;
+}
 
-.arrow-box {
+.break-content {    
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.break-content p {
+    font-size: 20px;
+    opacity: .5;
+}
+
+.break-content div {
+    display: flex;
+    align-items: center;
+}
+
+.break-content div p {
+    font-size: 15px;
+    font-weight: 800;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.break-content h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.break-content img {
+    margin: 0 25px;
+}
+
+.contact {
+    height: 450px;
+    background-color: black;
+    color: #666666;
+}
+
+.contact h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-size: 10px;
+}
+
+.contact-box > div {
+    border-bottom: 1px solid #1e1e1e;
+    padding: 6% 0;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-end;
+}
+
+.contact-media {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.contact-media a {
+    color: black;
+        margin-right: 4%;
+}
+
+.contact-media-links {
+    display: flex;
+    
+}
+
+.hex {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
-    height: 80px;
-    background-color: yellow;
-}
-.arrow {
-    border: solid black;
-    border-width: 0 7px 7px 0;
-    display: inline-block;
-    padding: 10px;
+    width: 43px;
+    height: 50px;
+    background-image: url(hex.png);
 }
 
-.left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
+.fab {
+    font-size: 20px;
+    font-weight: 800;
 }
 
-.right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+.contact-box .nav-links {
+    width: auto;
 }
 
-.l-side {
+.contact-box .nav-links a{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+}
+
+.rights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    background-color: #1e1e1e;
+    font-size: 10px;   
+    color: #666666;
+    position: relative;
+    z-index: 1;
+}
+
+.rights span {
+    color: #c6c6c6;
+}
+
+.watermark {
     position: absolute;
-    top: 50%;
-    left: 40px
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    opacity: .1;
 }
 
-.r-side {
-    position: absolute;
-    top: 50%;
-    right: 40px;
-}
+
+
+
 

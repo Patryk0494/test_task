@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Zadanie testowe</title>
     <script src="https://kit.fontawesome.com/498a0d271e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="container">
@@ -29,9 +31,13 @@
                     <a href="#services">zobacz usługi</a>
                     <a href="">zadzwoń +48 639 852 741</a> 
                 </div>
+                <div class="landing-page-content-showMore">
+                    <span>zobacz nasze usługi</span> 
+                    <div class="arrow-box">
+                        <div class="arrow down"></div>
+                    </div>
+                </div>
             </div>    
-            <span>zobacz nasze usługi</span> 
-            <div class="arrow down"></div>
             <div class="arrow-box l-side">
                 <div class="arrow left"></div>
             </div>
@@ -39,7 +45,7 @@
                 <div class="arrow right"></div>
             </div>           
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="services-container">
                 <div class="box-painting">
                     <div class="box-shadow">
@@ -68,56 +74,61 @@
             </div>
         </section>
         <section class="recomendation">
-            <div class="container-recomandation">
+            <div class="recomandation-container">
                 
                 <div class="recomendation-box">
                     <div class="recomendation-pic-1"></div>
-                    <div>
+                    <div class="recomendation-content">
                         <h2>Joanna Kowalska:</h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur 
-                            nihil.
+                            nihil consectetur adipisicing.
                         </p>
                     </div>
                 </div>
 
                 <div class="recomendation-box">
                     <div class="recomendation-pic-2"></div>
-                    <div>
+                    <div class="recomendation-content">
                         <h2>Wojciech Tomaszkiewicz:</h2>
                         <p>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae 
-                            porro.
+                            porro Aspernatur nihil.
                         </p>
                     </div>
                 </div>
 
                 <div class="recomendation-box">
                     <div class="recomendation-pic-3"></div>
-                    <div>
+                    <div class="recomendation-content">
                         <h2>Karol Dobrowolski:</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit cum 
-                            incidunt.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit Aspernatur 
+                            nihil cum incidunt.
                         </p>
                     </div>
                 </div> 
 
             </div>
         </section>
-        <section class="realization">
+        <section class="realization" id="realization">
             <div class="container">
                 <div class="realization-header">
-                    <h1>Realizacje</h1>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Nisi illo veritatis necessitatibus hic, laboriosam.
-                    </p>
-                    <div class="realization-header-arrows">
-                        <a href="">&lt</a>
-                        <a href="">&gt</a>
+                    <div class="realization-header-text"> 
+                        <h1>Realizacje</h1>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Nisi illo veritatis necessitatibus hic, laboriosam.
+                        </p>
                     </div>
-                    <a href="">Zobacz więcej</a> 
+                    <div class="realization-header-nav">
+                        <div class="realization-header-arrows">
+                            <a href="">&lt</a>
+                            <a href="">&gt</a>
+                        </div>
+                        <a href="">Zobacz więcej</a>
+                    </div>
+                     
                 </div>
                 <div class="realization-content">
                     <div class="realization-content-box">
@@ -156,17 +167,19 @@
         <footer>
             <div class="break">
                 <div class="break-content container">
-                    <p>
-                        Nagły wypadek? Potrzebujesz szybkiej pomocy?
-                    </p> 
-                    <div>
+                    <div class="break-content-emergency">
+                        <p>Nagły wypadek?</p> 
+                        <p>Potrzebujesz szybkiej pomocy?</p> 
+                    </div>
+ 
+                    <div class="break-content-call">
                         <p>zadzwoń</p>
                         <img src="phone.png" alt="">
                         <h2>+48 639 852 741</h2>
                     </div>
                 </div> 
             </div>
-            <div class="contact">
+            <div class="contact" id="contact">
                 <div class="container">
                     <div class="contact-box">
                         <div class="logo"><img src="logo.png" alt=""></div>
@@ -205,7 +218,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="nav-links">
+                        <div class="contact-nav-links">
                             <a href="#main_page">strona główna</a>
                             <a href="#about">o firmie</a>
                             <a href="#services">usługi</a>
@@ -213,12 +226,11 @@
                             <a href="#contact">kontakt</a>  
                         </div> 
                     </div> 
-                    <div class="map">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d81626.04978377106!2d18.86607897385098!3d50.258057054140124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1605209780992!5m2!1spl!2spl" 
-                            width="500" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-                        </iframe>
-                    </div>                 
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d81626.04978377106!2d18.86607897385098!3d50.258057054140124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1605209780992!5m2!1spl!2spl" 
+                        width="480" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                                     
                 </div>
             </div>
             <div class="rights">

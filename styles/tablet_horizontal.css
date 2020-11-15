@@ -1,0 +1,60 @@
+@media (min-width: 1024px){
+    .nav-links {
+        width: 55%;
+        display: flex;
+    }
+
+    iframe {
+        width: 40%;
+    }
+
+    .recomendation > div {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3% 0;
+    }
+
+    .recomendation-box:first-of-type {
+        margin: 0;
+    }
+
+    .recomendation-box:last-of-type {
+        margin: 0;
+    }
+
+    .recomendation-box {
+        margin: 0 2%;
+    }
+
+    .realization-content {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .realization-content-box {
+    flex-direction: column;
+    }
+
+    .realization-content-pic {
+        width: 100%;
+        padding-bottom: 80%;
+    }
+
+    .break-content-emergency {
+        flex-direction: row;
+    }
+    
+    .break-content p:last-of-type {
+        margin-left: 5px;
+    }
+    
+    .contact .container {
+        flex-direction: row;
+        width: 100%;
+        margin-left: 2.5%;
+    }
+
+    .contact-box {
+        width: 50%;
+    }
+}

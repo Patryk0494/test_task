@@ -1,0 +1,98 @@
+@media (min-width: 1200px) {
+    .container {
+        width: 1150px;
+        margin: 0 auto;
+    }
+
+    .landing-page {
+        height: calc(100vh - 110px);
+        justify-content: center;    
+    }
+
+    .landing-page h1 {
+        width: 50%;
+    }
+
+    .landing-page h1 {
+        font-size: 45px;
+        margin-bottom: 3%;
+    }
+
+    .arrow-box {
+        background-color: yellow;  
+        border: none;
+    }
+    
+    .arrow {
+        border: solid black;
+        border-width: 0 7px 7px 0;    }
+
+    .services-container > div{
+        width: 25%;
+        padding-bottom: 15.8%;
+        flex-direction: row;
+    } 
+
+    .recomandation-container{
+        width: 80%;
+        max-width: 1500px; 
+    }
+
+    .recomendation-box {
+       width: 30%; 
+       flex-direction: row;
+       justify-items: flex-start;
+       align-content: space-between;
+    }
+
+    .recomendation-box div:first-of-type {
+        margin-right: 5%;
+    }
+
+    .realization .container {
+        flex-direction: row;
+    }
+    
+    .realization-header {
+        width: 65%;
+        margin-right: 2%;
+    }
+
+    .realization-header-text {
+        flex-direction: column;
+    }
+
+    .realization-header-text p {
+        text-align: left;
+    }
+
+    .realization-header-nav {
+        flex-direction: column;
+    }
+
+    .realization-header-nav a {
+        margin-top: 15px;
+    }
+
+    .realization-content-desc {
+        background-color: #e9e9e9;
+    }
+
+    .contact .container {
+        justify-content: space-between;
+    }
+
+    .contact-box {
+        width: 40%;
+    }
+
+    .contact {
+        height: 450px;
+    }
+
+    .contact-media {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+}

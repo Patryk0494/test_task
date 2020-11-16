@@ -1,21 +1,50 @@
 @media (min-width: 1200px) {
+    body {
+        min-width: 1500px;
+    }
+
     .container {
         width: 1150px;
         margin: 0 auto;
     }
 
+    .nav-links a {
+        border-bottom: 2px solid transparent;
+        transition: .2s linear;
+        transition-delay: .2s;
+    }
+
+    .nav-links a:hover {
+        color: #f8db14;
+        border-color: #f8db14;
+        transform: scale(1.2);
+    }
+
+    .landing-page-content {
+        align-items: flex-start;
+        justify-content: center;
+        gap: 3%;
+    }
+
     .landing-page {
-        height: calc(100vh - 110px);
+        height: calc(100vh - 70px);
         justify-content: center;    
     }
 
     .landing-page h1 {
         width: 50%;
+        font-size: 45px;
+        margin-bottom: 35px;
+        text-align: left;
+        line-height: 130%;
     }
 
-    .landing-page h1 {
-        font-size: 45px;
-        margin-bottom: 3%;
+    .landing-page-content-links {
+        margin: 0;  
+    }
+
+    .landing-page-content-showMore {
+        align-self: center;
     }
 
     .arrow-box {
@@ -39,14 +68,19 @@
     }
 
     .recomendation-box {
-       width: 30%; 
+       width: 33%; 
+       padding: 0;
+       margin: 0;
        flex-direction: row;
-       justify-items: flex-start;
-       align-content: space-between;
+       border: none;
     }
 
     .recomendation-box div:first-of-type {
         margin-right: 5%;
+    }
+
+    .recomendation-content {
+        margin: 0;
     }
 
     .realization .container {
@@ -78,12 +112,12 @@
         background-color: #e9e9e9;
     }
 
-    .contact .container {
-        justify-content: space-between;
-    }
-
     .contact-box {
         width: 40%;
+    }
+
+    iframe {
+        width: 55%;
     }
 
     .contact {

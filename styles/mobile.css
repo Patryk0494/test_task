@@ -18,20 +18,27 @@
     text-transform: uppercase;
     background-size: cover;
     text-align: center;
+    position: relative;
 }
 
 .landing-page-content {
-    display: block;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.landing-page h2 {
+.landing-page-content h2 {
+    padding-top: 65px;
+    margin-bottom: 10px;
     font-size: 20px;
     font-weight: 700;
     color: #d8d8d8;
-    padding-top: 65px;
 }
 
-.landing-page h1 {
+.landing-page-content h1 {
+    width: 80%;
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -191,7 +198,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     border: 1px solid #595959;
     text-align: center;
 }
@@ -285,15 +291,23 @@
     margin-bottom: 4%;
 }
 
+.realization-header-nav {
+    gap: 15px
+}
+
 .realization-header-arrows a{
     font-size: 32px;
     font-weight: 700;
     color: black;
 }
 
-.realization-header a {
+.showMore {
+    width: fit-content;
     font-weight: 700;
     font-size: 18px;
+    text-transform: uppercase;
+    background: transparent; 
+    border: none;
     color: #f8db14;
 }
 
@@ -496,4 +510,22 @@ iframe {
     left: 0;
     z-index: 0;
     opacity: .1;
+}
+
+.up {
+    position: fixed;
+    bottom: 120px;
+    right: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    opacity: .7;
+}
+
+.textup {
+    position: absolute;
+    width: max-content;
+    right: 50px;
+    color: #f8db14;
+    font-size: 15px;
+    text-transform: uppercase;
 }

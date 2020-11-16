@@ -51,13 +51,15 @@
                 <div class="description-sideContent">
                     <div class="description-sideContent-sendMessage">
                         <h2>wyślij wiadomość</h2>
-                        <input type="text" placeholder="Imię i nazwisko">
-                        <input type="text" placeholder="E-mail lub telefon">
+                        <div class="inputInline">
+                            <input type="text" placeholder="Imię i nazwisko">
+                            <input type="text" placeholder="E-mail lub telefon">
+                        </div>
                         <input type="text" placeholder="Temat">
                         <input type="text" class="input-content" placeholder="Treść">
                         <button class="sendBtn">Wyślij</button>
                     </div>
-                    <div class="description-sideContent-addInfo">
+                    <div class="description-sideContent-info">
                         <h2>donec nocummy</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae tempore, omnis amet cumque 
@@ -171,7 +173,7 @@
                     </div>
 
                 </div>
-                <button class="moreBtn">zobacz więcej</button>
+                <button class="moreBtn" id="moreBtn" onclick="onMoreBtnClicked()">zobacz więcej</button>
                 <div class="otherServices">
                     <h1>zobacz pozostałe usługi</h1>
                     <div class="otherServices-links">
@@ -185,6 +187,7 @@
         </section>
     </div>
     
-    
+    <script src="index.js"></script>   
+   
 </body>
 </html>

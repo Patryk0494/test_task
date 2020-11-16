@@ -1,0 +1,40 @@
+@media (min-width: 1024px) {
+    .description .container {
+        flex-direction: row;
+    }
+
+    .inputInline {
+        flex-direction: column;
+    }
+
+    .inputInline input {
+        width: 100%;
+    }
+
+    .input-content {
+        padding-bottom: 40%;
+    }
+    
+    .realization-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .realization-content-box {
+        width: 31%;
+    }
+
+    .realization-content-box:nth-of-type(n+4){
+        display: flex;
+    }
+
+    .realization-content-box {
+        flex-direction: column;
+    }
+
+    .realization-content-pic {
+        flex-shrink: 0;
+        width: 100%;
+        padding-bottom: 52%;
+    }
+}

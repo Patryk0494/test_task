@@ -1,0 +1,33 @@
+@media (min-width: 768px) {
+    .inputInline {
+        flex-direction: row;
+    }
+
+    .inputInline input{
+    width: 50%;
+    }
+
+    .input-content {
+        padding-bottom: 20%;
+    }
+
+    .realization-content-box {
+        flex-direction: row;
+    }
+
+    .realization-content-pic {
+        flex-shrink: 0;
+        width: 60%;
+        padding-bottom: 32%;
+    }
+
+    .moreBtn {
+        margin-bottom: 50px;
+    }
+
+    .otherServices-links {
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: 18px;
+    }
+}  

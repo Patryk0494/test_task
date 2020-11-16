@@ -1,0 +1,26 @@
+@media (min-width: 1200px) {
+    .description-content {
+        width: 65%;
+    }
+
+    img {
+        width: 740px;
+    }
+
+    .description-sideContent {
+        width: min-content;
+    }
+
+    .description-sideContent-sendMessage {
+        width: 370px;
+    }
+
+    .realization-content-box {
+        width: 23%;
+    } 
+
+    .otherServices-links a {
+        background-color: #f8db14;
+        border: none;
+    }
+}

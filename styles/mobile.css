@@ -1,8 +1,9 @@
-.nav-links, .contact-nav-links {
+.nav-links,
+.contact-nav-links {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    font-size: 13px; 
+    font-size: 13px;
 }
 
 .nav-links {
@@ -18,10 +19,11 @@
     position: absolute;
     top: 0;
     right: 380px;
-    transform: translateX(calc(-100% - 380px));
+    transform: translateX(calc(100% + 380px));
 }
 
-.mobile-nav a, .roll{
+.mobile-nav a,
+.roll {
     padding: 25px 40px;
     font-size: 18px;
     font-weight: 700;
@@ -41,7 +43,7 @@
 
 .hamburger {
     border: none;
-    padding: 20px; 
+    padding: 20px;
     position: relative;
     transform: translateX(0);
 }
@@ -63,7 +65,8 @@
     position: absolute;
 }
 
-.burger-bar::after, .burger-bar::before {
+.burger-bar::after,
+.burger-bar::before {
     content: '';
     width: 30px;
     height: 5px;
@@ -142,7 +145,7 @@
     align-items: center;
 }
 
-.landing-page-content-showMore .arrow-box {  
+.landing-page-content-showMore .arrow-box {
     border: transparent;
 }
 
@@ -200,7 +203,7 @@
     flex-direction: column;
 }
 
-.services-container > div {
+.services-container>div {
     position: relative;
     width: 100%;
     padding-bottom: 52%;
@@ -243,7 +246,7 @@
     border: 2px solid #f8db14;
     font-size: 21px;
     font-weight: 700;
-    color:  #f8db14;
+    color: #f8db14;
     text-align: center;
 }
 
@@ -252,12 +255,12 @@
     align-content: center;
 }
 
-.recomendation > div{
+.recomendation>div {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
-.recomandation-container{ 
+.recomandation-container {
     width: 90%;
     margin: 0 auto;
 }
@@ -326,7 +329,7 @@
     margin: 4% auto;
     flex-direction: column;
 }
-  
+
 .realization p {
     font-size: 11px;
     line-height: 170%;
@@ -365,7 +368,7 @@
     gap: 15px
 }
 
-.realization-header-arrows a{
+.realization-header-arrows a {
     font-size: 32px;
     font-weight: 700;
     color: black;
@@ -376,7 +379,7 @@
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
-    background: transparent; 
+    background: transparent;
     border: none;
     color: #f8db14;
 }
@@ -395,17 +398,17 @@
 }
 
 .pic-1 {
-    background-image: url(images/realization-1.png); 
+    background-image: url(images/realization-1.png);
     background-position: center;
 }
 
 .pic-2 {
-    background-image: url(images/realization-2.png); 
+    background-image: url(images/realization-2.png);
     background-position: left;
 }
 
 .pic-3 {
-    background-image: url(images/realization-3.png); 
+    background-image: url(images/realization-3.png);
     background-position: top;
 }
 
@@ -421,13 +424,13 @@
     letter-spacing: -1px;
 }
 
-.break{ 
+.break {
     background-color: #f8db14;
     position: relative;
     z-index: 1;
 }
 
-.break-content {    
+.break-content {
     height: 130px;
     display: flex;
     flex-direction: column;
@@ -489,12 +492,12 @@
     font-size: 10px;
 }
 
-.contact-box > div {
+.contact-box>div {
     border-bottom: 1px solid #1e1e1e;
     padding: 6% 0;
 }
 
-.contact-box > div:last-of-type {
+.contact-box>div:last-of-type {
     border-bottom: none;
 }
 
@@ -507,7 +510,7 @@
     font-size: 11px;
 }
 
-.contact-content > div {
+.contact-content>div {
     width: 50%;
 }
 
@@ -524,7 +527,6 @@
 
 .contact-media-links {
     display: flex;
-    
 }
 
 .hex {
@@ -545,7 +547,7 @@
     width: auto;
 }
 
-.contact-nav-links a{
+.contact-nav-links a {
     font-weight: 700;
     text-transform: uppercase;
     color: white;
@@ -562,7 +564,7 @@ iframe {
     justify-content: center;
     height: 75px;
     background-color: #1e1e1e;
-    font-size: 10px;   
+    font-size: 10px;
     color: #666666;
     position: relative;
     z-index: 1;
